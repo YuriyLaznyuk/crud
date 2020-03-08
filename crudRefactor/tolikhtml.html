@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CRUD</title>
+    <meta name="keywords" content="Database data table person people">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="content-language" content="en">
+    <meta http-equiv="refresh" content="240">
+    <meta name="robots" content="index">
+    <meta name="description" content="Four basic functions used when working with databases.
+    When working with the database, these four operations are used: creation (create), reading (read), updating (update), deletion (delete).">
+    <meta name="author" content="Kryvkin Anatolii">
+    <meta name="copyright" content="All rights belong to Anatoly Kryvkin">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<div class="conteiner">
+        <div class="top">
+            <div class="radio-buttom">
+                <div class="radio-row">
+                    <label for="localStorage">LOCAL STORAGE</label>
+                    <input type="radio" id="local-storage" name="contact" value="localStorage">
+                </div>
+                <div class="radio-row">
+                    <label for="indexDB">INDEXED DB</label>
+                    <input type="radio" id="indexdb" name="contact" value="indexBD">
+                </div>
+                <div class="radio-row">
+                    <label for="server">SERVER</label>
+                    <input type="radio" id="server" name="contact" value="server">
+                </div>
+            </div>
+            <div class="flex-panel">
+                <div class="write-panel">
+                    <input class="write" id = "id" type="number" name="textview" placeholder="Enter ID"/>
+                    <input class="write" id = "first-name" type="text" name="textview" placeholder="Enter Firstname"/>
+                    <input class="write" id = "last-name" type="text" name="textview" placeholder="Enter Lastname"/>
+                </div>
+                <div class="write-panel">
+                    <input class="write" id = "age" type="number" name="number" placeholder="Enter Age"/>
+                    <input class="write" id = "email" type="text" name="textview" placeholder="Enter Email"/>
+                    <input class="write" id = "phone" type="text" name="textview" placeholder="Enter Phone"/>
+                </div>
+                <div class="button-panel">
+                    <button type="button" value="create" id="create" class="btn create">CREATE</button>
+                    <button type="button" value="update" id="update" class="btn update">UPDATE</button>
+                    <button type="button" value="delete" id="del" class="btn delete">DELETE</button>
+                </div>
+            </div>
+        </div>
+        <div class="table"> 
+            <div class="column id-column">ID</div>
+            <div class="column firs-name-colum">Firstname</div>
+            <div class="column last-name-colum">Lastname</div>
+            <div class="column age-colum">Age</div>
+            <div class="column email-colum">Email</div>
+            <div class="column phone-colum">Phone</div>
+        </div>
+        <div class="del"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dexie/2.0.4/dexie.min.js" integrity="sha256-ubffRsoh9QK5xJC/u3s3drtGFBZUHBm9bHFRzYvtkJI=" crossorigin="anonymous"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>
