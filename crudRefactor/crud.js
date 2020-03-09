@@ -59,10 +59,10 @@ buttonDelete.addEventListener("click", function(e) {
   deliteElementId(e.target.value);
 });
 
-let buttonRead = document.getElementById("read");
-buttonRead.addEventListener("click", function(e) {
-  readTable(e.target.value);
-});
+// let buttonRead = document.getElementById("read");
+// buttonRead.addEventListener("click", function(e) {
+//   readTable(e.target.value);
+// });
 // кнопки радио
 let buttonLS = document.getElementById("ls");
 buttonLS.addEventListener("change", function(e) {
@@ -91,6 +91,7 @@ function createTable() {
   let localPerson = new Person(mId, mFName, mLName, mAge, mEmail, mPhone);
   let divA = document.createElement("div");
   divA.id = mId;
+  divA.className = "info";
 
   let divN1 = document.createElement("div");
   divN1.className = "info1";
@@ -209,6 +210,7 @@ function readTable() {
   for (let i = 0; i < date.length; i++) {
     let divA = document.createElement("div");
     divA.id = date[i].mId;
+    divA.className = "info";
 
     let divN1 = document.createElement("div");
     divN1.className = "info1";
