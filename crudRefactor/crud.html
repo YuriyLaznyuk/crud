@@ -1,51 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="crud.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="крад" />
+    <meta name="description" content="крад для разработки" />
+    <meta name="author" content="автор Юра" />
+    <meta name="copyright" content="права принадлежат Юре" />
+    <meta name="robots" content="all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="crud.css" />
+
     <title>Document</title>
-</head>
-<body>
-    <p>
-        id
-        <input type="number" name="" id="id" value="">
-        Fname
-        <input type="text" name="" id="fname" value="">
-        Lname
-        <input type="text" name="" id="lname" value="">
+  </head>
+  <body>
+    <div class="container">
+      <div class="radio-but">
+        <div class="radiorow">
+          <label for="ls">LOCAL STORAGE</label>
+          <input type="radio" name="but" id="ls" checked />
+        </div>
+        <div class="radiorow">
+          <label for="db">DATA BASE</label>
+          <span id="sp1">
+            <input type="radio" name="but" id="db" />
+          </span>
+        </div>
+        <div class="radiorow">
+            <label for="server">SERVER</label>
+            <span id="sp">
+                <input type="radio" name="but" id="server" />
+                
+            </span>
+        </div>
+      </div>
+      <div class="boxblock">
+        <div class="textinput">
+          <input
+            type="number"
+            name=""
+            id="id"
+            value=""
+            placeholder="Id"
+            class="text"
+          />
+          <input
+            type="text"
+            name=""
+            id="fname"
+            value=""
+            placeholder="FName"
+            class="text"
+          />
+          <input
+            type="text"
+            name=""
+            id="lname"
+            value=""
+            placeholder="LName"
+            class="text"
+          />
+        </div>
+        <div class="textinput">
+          <input
+            type="number"
+            name=""
+            id="age"
+            value=""
+            placeholder="Age"
+            class="text"
+          />
+          <input
+            type="text"
+            name=""
+            id="email"
+            value=""
+            placeholder="Email"
+            class="text"
+          />
+          <input
+            type="number"
+            name=""
+            id="phone"
+            value=""
+            placeholder="Phone"
+            class="text"
+          />
+        </div>
+        <div class="buttonss">
+          <button type="button" value="CREATE" id="create" class="button" >CREATE</button>
+          <!-- <input type="button" value="READ" id="read" /> -->
+          <button type="button" value="UPDATE" id="update" class="button" >UPDATE</button>
+          <button type="button" value="DELITE" id="delete" class="button" >DELETE</button>
+        </div>
+      </div>
+      <div class="table">
+        <div class="tab">ID</div>
+        <div class="tab">FName</div>
+        <div class="tab">LName</div>
+        <div class="tab">Age</div>
+        <div class="tab">Email</div>
+        <div class="tab1">Phone</div>
+      </div>
 
-    </p>
-    <p>
-        Age
-        <input type="number" name="" id="age" value="">
-        Email
-        <input type="text" name="" id="email" value="">
-        Phone
-        <input type="number" name="" id="phone" value="">
-
-    </p>
-
-    <p>
-        LS
-        <input type="radio" name="but" id="ls" checked>
-        DB
-        <input type="radio" name="but" id="db">
-        SERVER
-        <input type="radio" name="but" id="server">
-
-    </p>
-
-    <p>
-        <input type="button" value="CREATE" id="create">
-        <input type="button" value="READ" id="read">
-        <input type="button" value="UPDATE" id="update">
-        <input type="button" value="DELITE" id="delete">
-
-    </p>
-
-    <div id="root"></div>
-    <script src="/crudRefactor/crud.js" ></script>
-
-</body>
+      <div id="root"></div>
+    </div>
+    <script src="/crudRefactor/crud.js"></script>
+  </body>
 </html>
